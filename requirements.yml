@@ -1,0 +1,11 @@
+- src: https://github.com/banbanchs/ansible-role-fail2ban
+  name: fail2ban
+  version: master
+
+- src: https://github.com/jdauphant/ansible-role-nginx
+  name: nginx
+  version: master
+
+- src: geerlingguy.firewall
+
+- src: geerlingguy.redis

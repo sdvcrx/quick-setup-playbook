@@ -1,0 +1,28 @@
+---
+- hosts: all
+
+  roles:
+    - role: nginx
+      nginx_events_params:
+        - worker_connections 4096
+        - use epoll
+
+      nginx_configs:
+        gzip:
+        - gzip on
+        - gzip_disable "msie6"
+        - gzip_vary on
+        - gzip_min_length 256
+        - gzip_proxied any
+        - gzip_comp_level 5
+        - gzip_buffers 16 8k
+        - gzip_http_version 1.1
+        - gzip_types text/plain text/css application/javascript application/ecmascript application/json application/pdf application/postscript application/x-javascript image/svg+xml text/xml application/xml+rss text/javascript
+
+      nginx_sites:
+        webmain:
+          - listen 80
+          - charset utf-8
+          - server_name _
+          - root /srv/webmain
+          - index index.html
