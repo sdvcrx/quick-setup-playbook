@@ -1,0 +1,11 @@
+---
+- name: install vim for Debiain
+  apt: pkg=vim state=present
+  when: ansible_os_family == 'Debian'
+  tags: package
+
+- name: install vim for RedHat
+  yum: name=vim state=present
+  when: ansible_os_family == 'RedHat'
+  tags: package
+

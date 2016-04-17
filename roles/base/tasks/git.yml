@@ -1,0 +1,10 @@
+---
+- name: install git for Debiain
+  apt: pkg=git state=present
+  when: ansible_os_family == 'Debian'
+  tags: package
+
+- name: install git for RedHat
+  yum: name=git state=present
+  when: ansible_os_family == 'RedHat'
+  tags: package

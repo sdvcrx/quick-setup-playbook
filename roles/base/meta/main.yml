@@ -1,0 +1,22 @@
+galaxy_info:
+  author: banbanchs
+  description: Install some basic package
+
+  license: MIT
+
+  min_ansible_version: 1.6
+
+  platforms:
+  - name: EL
+    versions:
+    - all
+  - name: Ubuntu
+    versions:
+    - all
+  - name: Debian
+    versions:
+    - all
+
+  galaxy_tags: []
+
+dependencies: []

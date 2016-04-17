@@ -1,0 +1,5 @@
+---
+- name: install epel for CentOS
+  yum: name=epel-release state=present
+  tags: package
+

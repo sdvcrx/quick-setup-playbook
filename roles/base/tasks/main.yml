@@ -1,0 +1,7 @@
+---
+- include: epel.yml
+  when: ansible_distribution == 'CentOS'
+
+- include: git.yml
+- include: htop.yml
+- include: vim.yml
