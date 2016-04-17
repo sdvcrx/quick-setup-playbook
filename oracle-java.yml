@@ -1,0 +1,10 @@
+---
+- hosts: all
+
+  vars:
+    java_version: 8
+    java_subversion: 77
+
+  roles:
+    - williamyeh.oracle-java
+

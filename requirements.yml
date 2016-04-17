@@ -11,3 +11,5 @@
 - src: geerlingguy.redis
 
 - src: geerlingguy.haproxy
+
+- src: williamyeh.oracle-java

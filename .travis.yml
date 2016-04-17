@@ -32,4 +32,5 @@ script:
   - ansible-playbook ./fail2ban.yml -i hosts --syntax-check
   - ansible-playbook ./redis.yml -i hosts --syntax-check
   - ansible-playbook ./haproxy.yml -i hosts --syntax-check
+  - ansible-playbook ./oracle-java.yml -i hosts --syntax-check
 
