@@ -22,7 +22,7 @@ install:
   - cp ./hosts.example hosts
 
   # Install dependencies
-  - ansible-galaxy -p galaxy.roles -r ./requirements.yml
+  - ansible-galaxy install -p galaxy.roles -r ./requirements.yml
 
 script:
   # Basic role syntax check
