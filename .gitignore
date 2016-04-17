@@ -1,0 +1,10 @@
+
+# Created by https://www.gitignore.io/api/ansible
+
+### Ansible ###
+*.retry
+
+### ansible galaxy ###
+galaxy.roles/
+
+hosts
