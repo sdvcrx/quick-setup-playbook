@@ -1,0 +1,10 @@
+---
+- hosts: all
+
+  roles:
+    - geerlingguy.security
+
+  vars:
+    # security_sudoers_passwordless:
+      # - banbanchs
+
