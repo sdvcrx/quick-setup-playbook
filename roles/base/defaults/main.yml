@@ -3,4 +3,7 @@ basic_package_list:
   - htop
   - tree
   - mosh
+  - tmux
+  - rsync
+  - atool
 
