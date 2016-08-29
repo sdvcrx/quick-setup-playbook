@@ -1,0 +1,16 @@
+---
+# See More: https://github.com/weareinteractive/ansible-ufw
+- hosts: all
+  roles:
+    - franklinkim.ufw
+  vars:
+    # ufw_rules:
+      # - { port: 22, rule: allow }
+
+    ufw_applications:
+      - { name: "OpenSSH" }
+      - { name: "mosh" }
+      - { name: "Nginx Full" }
+
+    ufw_default_forward_policy: ACCEPT
+

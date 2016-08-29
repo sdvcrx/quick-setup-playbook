@@ -13,3 +13,6 @@
 - src: geerlingguy.haproxy
 
 - src: williamyeh.oracle-java
+
+- src: franklinkim.ufw
+
