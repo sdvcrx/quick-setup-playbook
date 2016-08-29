@@ -1,0 +1,9 @@
+---
+- hosts: all
+
+  roles:
+    - geerlingguy.nodejs
+
+  vars:
+    - nodejs_version: "6.x"
+
