@@ -2,10 +2,19 @@
 - name: install vim for Debiain
   apt: pkg=vim state=present
   when: ansible_os_family == 'Debian'
-  tags: package
+  tags:
+    - package
+    - vim
 
 - name: install vim for RedHat
   yum: name=vim state=present
   when: ansible_os_family == 'RedHat'
-  tags: package
+  tags:
+    - package
+    - vim
 
+- name: copy vimrc to server
+  copy: src="../files/vimrc" dest="~/.vimrc"
+  tags:
+    - package
+    - vim

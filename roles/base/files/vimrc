@@ -1,0 +1,7 @@
+set nu sts=4 ts=4 sw=4 et si ai
+set ruler
+syntax on
+filetype plugin on
+
+inoremap jj <ESC>
+nnoremap ; :
