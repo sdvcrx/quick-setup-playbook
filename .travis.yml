@@ -36,4 +36,5 @@ script:
   - ansible-playbook ./nodejs.yml -i hosts --syntax-check
   - ansible-playbook ./ufw.yml -i hosts --syntax-check
   - ansible-playbook ./security.yml -i hosts --syntax-check
+  - "ansible-playbook ./base.yml -i hosts --connection=local --sudo"
 
