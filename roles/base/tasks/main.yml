@@ -5,3 +5,4 @@
 - include: git.yml
 - include: base.yml
 - include: vim.yml
+- include: pacapt.yml

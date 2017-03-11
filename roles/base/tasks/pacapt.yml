@@ -1,0 +1,9 @@
+---
+- name: download pacapt from github
+  get_url: url=https://github.com/icy/pacapt/raw/ng/pacapt dest=/usr/local/bin/pacapt mode=755
+  tags: pacapt
+
+- name: create symlink to usr bin
+  file: src=/usr/local/bin/pacapt dest=/usr/local/bin/pacman state=link
+  tags: pacapt
+
