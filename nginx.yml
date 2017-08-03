@@ -2,9 +2,13 @@
 - hosts: all
 
   vars:
+    log_directory: "/var/log/nginx"
     dhparam_path: "/etc/nginx/ssl/dhparams.pem"
 
   pre_tasks:
+    - name: Create log files directory
+      file: path={{ log_directory }} state=directory recurse=true
+
     - name: Create nginx ssl directory
       file: path=/etc/nginx/ssl state=directory recurse=true
 
@@ -16,8 +20,8 @@
       nginx_worker_rlimit_nofile: 102400
       nginx_http_params:
         - sendfile "on"
-        - access_log "/data/log/nginx/access.log"
-        - error_log "/data/log/nginx/error.log"
+        - access_log "{{ log_directory }}/access.log"
+        - error_log "{{ log_directory }}/error.log"
         - charset utf-8
         - server_tokens off
 
@@ -59,3 +63,5 @@
           - server_name _
           - root /srv/webmain
           - index index.html
+          - access_log "{{ log_directory }}/webmain-access.log"
+          - error_log "{{ log_directory }}/webmain-error.log"
