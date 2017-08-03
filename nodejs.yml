@@ -1,9 +1,25 @@
 ---
 - hosts: all
 
+  pre_tasks:
+    - name: Copy npmrc to server
+      copy: src="./files/npmrc" dest="~/.npmrc"
+
+    - name: Copy npmrc to server
+      copy: src="./files/yarnrc" dest="~/.yarnrc"
+
+    - name: Set nvm mirrors
+      lineinfile:
+        dest=/root/.bashrc
+        line="export NVM_NODEJS_ORG_MIRROR=https://npm.taobao.org/mirrors/node"
+        regexp="^export NVM_NODEJS_ORG_MIRROR"
+        owner=root
+        state=present
+
   roles:
-    - geerlingguy.nodejs
-
-  vars:
-    - nodejs_version: "6.x"
-
+    - role: fubarhouse.nodejs
+      node_version: 6.11.2
+      node_versions: ""
+      node_packages:
+        - pm2
+        - yarn
