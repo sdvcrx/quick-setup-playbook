@@ -1,6 +1,16 @@
 ---
 - hosts: all
 
+  vars:
+    dhparam_path: "/etc/nginx/ssl/dhparams.pem"
+
+  pre_tasks:
+    - name: Create nginx ssl directory
+      file: path=/etc/nginx/ssl state=directory recurse=true
+
+    - name: Create dhparams.pem
+      command: openssl dhparam -out {{ dhparam_path }} 2048 creates={{ dhparam_path }}
+
   roles:
     - role: jdauphant.nginx
       nginx_worker_rlimit_nofile: 102400
