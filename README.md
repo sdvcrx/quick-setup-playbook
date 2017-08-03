@@ -1,6 +1,6 @@
 ## Quick setup playbooks ##
 
-[![Build Status](https://travis-ci.org/banbanchs/quick-setup-playbook.svg?branch=master)](https://travis-ci.org/banbanchs/quick-setup-playbook)
+[![Build Status](https://travis-ci.org/sdvcrx/quick-setup-playbook.svg?branch=master)](https://travis-ci.org/sdvcrx/quick-setup-playbook)
 
 > Setup a server in minutes!
 

@@ -1,4 +1,4 @@
-- src: https://github.com/banbanchs/ansible-role-fail2ban
+- src: https://github.com/sdvcrx/ansible-role-fail2ban
   name: fail2ban
   version: master
 
