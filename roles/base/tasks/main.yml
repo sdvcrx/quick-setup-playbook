@@ -1,8 +1,8 @@
 ---
-- include: epel.yml
+- import_tasks: epel.yml
   when: ansible_distribution == 'CentOS'
 
-- include: git.yml
-- include: base.yml
-- include: vim.yml
-- include: pacapt.yml
+- import_tasks: git.yml
+- import_tasks: base.yml
+- import_tasks: vim.yml
+- import_tasks: pacapt.yml
