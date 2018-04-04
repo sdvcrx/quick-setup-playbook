@@ -6,3 +6,4 @@
 - import_tasks: base.yml
 - import_tasks: vim.yml
 - import_tasks: pacapt.yml
+- import_tasks: ulimit.yml

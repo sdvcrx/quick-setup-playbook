@@ -1,0 +1,11 @@
+---
+- name: modify linux PAM limits
+  pam_limits:
+    domain: "*"
+    limit_type: "{{ item }}"
+    limit_item: nofile
+    value: 65535
+  with_items:
+    - soft
+    - hard
+  tags: config
