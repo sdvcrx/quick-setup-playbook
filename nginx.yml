@@ -13,7 +13,7 @@
       file: path=/etc/nginx/ssl state=directory recurse=true
 
     - name: Create dhparams.pem
-      command: openssl dhparam -out {{ dhparam_path }} 2048 creates={{ dhparam_path }}
+      command: openssl dhparam -dsaparam -out {{ dhparam_path }} 4096 creates={{ dhparam_path }}
 
   roles:
     - role: jdauphant.nginx
