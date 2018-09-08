@@ -2,6 +2,7 @@
 - import_tasks: epel.yml
   when: ansible_distribution == 'CentOS'
 
+- import_tasks: ssh.yml
 - import_tasks: git.yml
 - import_tasks: base.yml
 - import_tasks: vim.yml
