@@ -1,13 +1,13 @@
 ---
 - name: install basic packages for Debiain
   apt: pkg={{ item }} state=present
-  with_items: "{{ basic_package_list }}"
+  loop: "{{ basic_package_list }}"
   when: ansible_os_family == 'Debian'
   tags: package
 
 - name: install basic packages for RedHat
   yum: name={{ item }} state=present
-  with_items: "{{ basic_package_list }}"
+  loop: "{{ basic_package_list }}"
   when: ansible_os_family == 'RedHat'
   tags: package
 

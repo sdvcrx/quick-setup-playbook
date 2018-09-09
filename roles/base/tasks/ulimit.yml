@@ -5,7 +5,7 @@
     limit_type: "{{ item }}"
     limit_item: nofile
     value: 65535
-  with_items:
+  loop:
     - soft
     - hard
   tags: config
