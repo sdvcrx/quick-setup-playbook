@@ -37,5 +37,5 @@ script:
   - ansible-playbook ./security.yml -i hosts --syntax-check
   - ansible-playbook ./swapfile.yml -i hosts --syntax-check
   - ansible-playbook ./php71.yml -i hosts --syntax-check
-  - "ansible-playbook ./base.yml -i hosts --connection=local"
+  - "ansible-playbook ./base.yml -i hosts --connection=local --sudo"
 
