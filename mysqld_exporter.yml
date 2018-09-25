@@ -1,0 +1,7 @@
+---
+- hosts: all
+  become: yes
+  vars:
+    mysqld_exporter_version: 0.11.0
+  roles:
+    - role: cloudalchemy.ansible_mysqld_exporter

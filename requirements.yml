@@ -24,4 +24,6 @@
 
 - src: cloudalchemy.node-exporter
 
+- src: cloudalchemy.ansible_mysqld_exporter
+
 - src: idealista.prometheus_redis_exporter-role
