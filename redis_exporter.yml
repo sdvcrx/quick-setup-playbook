@@ -1,0 +1,8 @@
+---
+- hosts: all
+  vars:
+    redis_exporter_version: 0.21.2
+    redis_exporter_redis_addr: redis://localhost:6379
+    redis_exporter_redis_password: ""
+  roles:
+    - role: idealista.prometheus_redis_exporter-role

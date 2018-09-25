@@ -23,3 +23,5 @@
 - src: fubarhouse.nodejs
 
 - src: cloudalchemy.node-exporter
+
+- src: idealista.prometheus_redis_exporter-role
