@@ -38,6 +38,9 @@
         - proxy_set_header X-Real-IP  $remote_addr
         - proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for
         - proxy_set_header X-Forwarded-Proto $scheme
+        - proxy_next_upstream error timeout invalid_header updating
+        - proxy_next_upstream_timeout 5s
+        - proxy_next_upstream_tries 2
 
         ssl:
         - ssl_protocols TLSv1 TLSv1.1 TLSv1.2
