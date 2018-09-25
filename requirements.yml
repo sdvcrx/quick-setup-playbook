@@ -14,7 +14,7 @@
 
 - src: geerlingguy.security
 
-- src: franklinkim.ufw
+- src: weareinteractive.ufw
 
 - src: kamaln7.swapfile
 
