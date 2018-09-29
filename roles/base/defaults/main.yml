@@ -6,4 +6,5 @@ basic_package_list:
   - tmux
   - rsync
   - atool
-
+  - wget
+  - ncdu
