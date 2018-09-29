@@ -3,7 +3,9 @@
 
   vars:
     java_version: 8
-    java_subversion: 77
+    java_subversion: 181
+    java_download_from_oracle: false
+    jdk_tarball_file: jdk-8u181-linux-x64
 
   roles:
     - williamyeh.oracle-java
