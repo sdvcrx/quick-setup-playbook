@@ -2,5 +2,6 @@
 - hosts: all
   become: true
   roles:
-    - kamaln7.swapfile
-
+    - role: oefenweb.swapfile
+      swapfile_size: 1GB
+      swapfile_swappiness: 10
