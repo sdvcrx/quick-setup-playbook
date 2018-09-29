@@ -1,0 +1,6 @@
+---
+- hosts: all
+  vars:
+    docker_edition: 'ce'
+  roles:
+    - geerlingguy.docker

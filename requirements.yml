@@ -10,6 +10,8 @@
 
 - src: geerlingguy.haproxy
 
+- src: geerlingguy.docker
+
 - src: williamyeh.oracle-java
 
 - src: geerlingguy.security
