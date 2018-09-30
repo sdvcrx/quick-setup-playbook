@@ -12,6 +12,8 @@
 
 - src: geerlingguy.docker
 
+- src: geerlingguy.java
+
 - src: williamyeh.oracle-java
 
 - src: geerlingguy.security
