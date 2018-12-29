@@ -20,8 +20,6 @@
 
 - src: weareinteractive.ufw
 
-- src: oefenweb.swapfile
-
 - src: geerlingguy.php
 
 - src: fubarhouse.nodejs
